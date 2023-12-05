@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search Your Brewery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body{background:#e7f1ff;}
+    .search-section{background: #E3DFDA;padding:30px 0px 30px 30px;margin:30px 0px;border-radius:30px;}
+    .logo{color:#fff;font-size:25px;line-height: 25px;font-weight: bolder;text-align: center;margin-bottom:0px;}
+    input{background:#e7f1ff;color:#000;border:none;border-radius:30px;padding:15px 10px;margin-bottom:15px;width:100%;font-size:16px;line-height:24px;text-align:center;}
+    .seach-here-title{font-size:20px;line-height:30px;}
+    .checked {color: orange;}
+    .brewery-details-card{padding:30px;}
+    .brewery-details-card p.single-brewery-title{font-size:20px;line-height:30px;font-weight: bold;}
+    .address{padding-left:20px;}
+    a{text-decoration:none;}
+    .brewery-details-card p{font-size:15px;line-height:20px;color:#311528;}
+    .learnmore-btn{margin-top:25px;text-align:center;}
+    .learnmore-btn a,.submit{background: #311528;color:#fff;border:1px solid #311528;border-radius: 30px;padding: 15px 30px;}
+    .learnmore-btn a:hover,.submit:hover{background: #fff;color:#311528;}
+    div.brewer-add-details{padding:0px 5px;}
+    .brewer-add-details span{font-size:12px;}
+    .submit{width:50%;}
+    .submit-btn{text-align: center;margin-bottom:50px;}
+    .brewery-details-card p.ratings-text{font-size:13px;}
+    footer,header{background: #311528;padding:15px 0px;}
+    footer p{color:#fff;font-weight: bold;font-size:14px;text-align:center;line-height: 20px;margin-bottom:0px;}
+    @media only screen and (max-width: 1199px) {
+    .search-section{padding:30px 30px 30px 30px;}
+    .brewery-details-card{padding:20px;}
+    }
+    @media only screen and (max-width: 576px) {
+        .search-section{padding:30px 10px;}
+        .brewery-details-card {padding:15px;}
+        .brewery-details-card p.single-brewery-title{font-size:16px;line-height:24px;margin-bottom:10px;}
+        .brewery-details-card p{font-size:14px;line-height:20px;}
+    }
+  </style>
+</head>
+<body>
+<header>
+    <div><p class="logo">SEARCH YOU BREWERY</p></div>
+</header>
+<div class="container ">
+    <div class="row search-section">
+        <div class="col-12 col-lg-3 px-0">
+            <div class="">
+                <div class="">
+                    <h2 class="seach-here-title">
+                        SEARCH HERE!!
+                    </h2>
+                    <div>
+                        <div>
+                            <form>
+                                <div><input type="text" name="search-name" class="search-name" placeholder="Enter the brewery name"/></div>
+                                <div><input type="text" name="search-type" class="search-type" placeholder="Enter the type"/></div>
+                                <div><input type="text" name="search-city" class="search-city" placeholder="Enter the city name"/></div>
+                                <div class="submit-btn"><input type="submit" name="submit-search" class="submit"/></div>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="col-12 col-lg-9 px-0 px-lg-4">
+        <div class="row m-0">
+            <div class="col-12 col-lg-6 px-0 px-lg-2 mb-4 mx-auto">
+                <div class="card brewery-details-card h-100 rounded-20">
+                    <p class="single-brewery-title">Brewery Name</p>
+                    <p class="single-brewery-title">Address:</p>
+                    <p class="address">Address 1, street name,zip code</p>
+                    <div class="row m-0">
+                        <div class="col-6 brewer-add-details px-0">
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf095;</i><a href="tel:9539259235">9539259235</a></p>
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf0ac;</i> <a href="websitelink">websitelink</a></p>
+                        </div>
+                        <div class="col-6 brewer-add-details px-0">
+                            <p class="ratings-text">Ratings:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <p>State,city</p>
+                        </div>
+                    </div>
+                    
+                    <p class="learnmore-btn"><a href="#">Learn more</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-2 mb-4 mx-auto">
+                <div class="card brewery-details-card h-100 rounded-20">
+                    <p class="single-brewery-title">Brewery Name</p>
+                    <p class="single-brewery-title">Address:</p>
+                    <p class="address">Address 1, street name,zip code</p>
+                    <div class="row m-0">
+                        <div class="col-6 brewer-add-details px-0">
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf095;</i><a href="tel:9539259235">9539259235</a></p>
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf0ac;</i> <a href="websitelink">websitelink</a></p>
+                        </div>
+                        <div class="col-6 brewer-add-details px-0">
+                            <p class="ratings-text">Ratings:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <p>State,city</p>
+                        </div>
+                    </div>
+                    
+                    <p class="learnmore-btn"><a href="#">Learn more</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-2 mb-4 mx-auto">
+                <div class="card brewery-details-card h-100 rounded-20">
+                    <p class="single-brewery-title">Brewery Name</p>
+                    <p class="single-brewery-title">Address:</p>
+                    <p class="address">Address 1, street name,zip code</p>
+                    <div class="row m-0">
+                        <div class="col-6 brewer-add-details px-0">
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf095;</i><a href="tel:9539259235">9539259235</a></p>
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf0ac;</i> <a href="websitelink">websitelink</a></p>
+                        </div>
+                        <div class="col-6 brewer-add-details px-0">
+                            <p class="ratings-text">Ratings:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <p>State,city</p>
+                        </div>
+                    </div>
+                    
+                    <p class="learnmore-btn"><a href="#">Learn more</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-2 mb-4 mx-auto">
+                <div class="card brewery-details-card h-100 rounded-20">
+                    <p class="single-brewery-title">Brewery Name</p>
+                    <p class="single-brewery-title">Address:</p>
+                    <p class="address">Address 1, street name,zip code</p>
+                    <div class="row m-0">
+                        <div class="col-6 brewer-add-details px-0">
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf095;</i><a href="tel:9539259235">9539259235</a></p>
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf0ac;</i> <a href="websitelink">websitelink</a></p>
+                        </div>
+                        <div class="col-6 brewer-add-details px-0">
+                            <p class="ratings-text">Ratings:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <p>State,city</p>
+                        </div>
+                    </div>
+                    
+                    <p class="learnmore-btn"><a href="#">Learn more</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-2 mb-4 mx-auto">
+                <div class="card brewery-details-card h-100 rounded-20">
+                    <p class="single-brewery-title">Brewery Name</p>
+                    <p class="single-brewery-title">Address:</p>
+                    <p class="address">Address 1, street name,zip code</p>
+                    <div class="row m-0">
+                        <div class="col-6 brewer-add-details px-0">
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf095;</i><a href="tel:9539259235">9539259235</a></p>
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf0ac;</i> <a href="websitelink">websitelink</a></p>
+                        </div>
+                        <div class="col-6 brewer-add-details px-0">
+                            <p class="ratings-text">Ratings:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <p>State,city</p>
+                        </div>
+                    </div>
+                    
+                    <p class="learnmore-btn"><a href="#">Learn more</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-2 mb-4 mx-auto">
+                <div class="card brewery-details-card h-100 rounded-20">
+                    <p class="single-brewery-title">Brewery Name</p>
+                    <p class="single-brewery-title">Address:</p>
+                    <p class="address">Address 1, street name,zip code</p>
+                    <div class="row m-0">
+                        <div class="col-6 brewer-add-details px-0">
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf095;</i><a href="tel:9539259235">9539259235</a></p>
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf0ac;</i> <a href="websitelink">websitelink</a></p>
+                        </div>
+                        <div class="col-6 brewer-add-details px-0">
+                            <p class="ratings-text">Ratings:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <p>State,city</p>
+                        </div>
+                    </div>
+                    
+                    <p class="learnmore-btn"><a href="#">Learn more</a></p>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-2 mb-4 mx-auto">
+                <div class="card brewery-details-card h-100 rounded-20">
+                    <p class="single-brewery-title">Brewery Name</p>
+                    <p class="single-brewery-title">Address:</p>
+                    <p class="address">Address 1, street name,zip code</p>
+                    <div class="row m-0">
+                        <div class="col-6 brewer-add-details px-0">
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf095;</i><a href="tel:9539259235">9539259235</a></p>
+                            <p><i style="font-size:20px;padding-right:15px;" class="fa">&#xf0ac;</i> <a href="websitelink">websitelink</a></p>
+                        </div>
+                        <div class="col-6 brewer-add-details px-0">
+                            <p class="ratings-text">Ratings:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <p>State,city</p>
+                        </div>
+                    </div>
+                    
+                    <p class="learnmore-btn"><a href="#">Learn more</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer>
+    <p>Designed by priyadharshini @2023</p>
+</footer>
+</body>
+</html>
